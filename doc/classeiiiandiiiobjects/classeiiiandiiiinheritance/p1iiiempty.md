@@ -5,7 +5,7 @@
 
 **Empty.kt**
 
-```
+```kotlin
 package classeiiiandiiiobjects.classeiiiandiiiinheritance.p1iiiempty
 
 class Empty
@@ -15,7 +15,7 @@ class Empty
 
 **Empty.java**
 
-```
+```java
 package classeiiiandiiiobjects.classeiiiandiiiinheritance.p1iiiempty;
 
 import kotlin.Metadata;

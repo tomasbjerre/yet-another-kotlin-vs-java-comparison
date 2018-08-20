@@ -5,7 +5,7 @@
 
 **InitOrderDemo.kt**
 
-```
+```kotlin
 package classeiiiandiiiobjects.classeiiiandiiiinheritance.p3initiiiorderiiidemo
 
 class InitOrderDemo(name: String) {
@@ -27,7 +27,7 @@ class InitOrderDemo(name: String) {
 
 **InitOrderDemo.java**
 
-```
+```java
 package classeiiiandiiiobjects.classeiiiandiiiinheritance.p3initiiiorderiiidemo;
 
 import org.jetbrains.annotations.NotNull;

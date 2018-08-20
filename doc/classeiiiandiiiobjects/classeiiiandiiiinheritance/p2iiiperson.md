@@ -5,7 +5,7 @@
 
 **Person.kt**
 
-```
+```kotlin
 package classeiiiandiiiobjects.classeiiiandiiiinheritance.p2iiiperson
 
 class Person constructor(firstName: String)
@@ -15,7 +15,7 @@ class Person constructor(firstName: String)
 
 **Person.java**
 
-```
+```java
 package classeiiiandiiiobjects.classeiiiandiiiinheritance.p2iiiperson;
 
 import kotlin.Metadata;

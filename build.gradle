@@ -135,7 +135,7 @@ class GenerateComparisonTask extends DefaultTask {
             doc += """
 **${fileName}**
 
-```
+```kotlin
 ${fileContent}
 ```
 """.stripMargin()
@@ -148,7 +148,7 @@ ${fileContent}
             doc += """
 **${fileName}**
 
-```
+```java
 ${fileContent}
 ```
 """.stripMargin()
