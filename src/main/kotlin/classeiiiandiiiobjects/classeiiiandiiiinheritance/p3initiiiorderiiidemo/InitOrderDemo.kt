@@ -1,4 +1,4 @@
-package se.bjurr.kotlinvsjava.classeiiiandiiiobjects.classeiiiandiiiinheritance.p3initiiiorderiiidemo
+package classeiiiandiiiobjects.classeiiiandiiiinheritance.p3initiiiorderiiidemo
 
 class InitOrderDemo(name: String) {
     val firstProperty = "First property: $name".also(::println)
