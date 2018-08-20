@@ -10,7 +10,7 @@ import kotlin.Metadata;
       "\000\f\n\002\030\002\n\002\020\000\n\002\b\002\030\0002\0020\001B\005¢\006\002\020\002¨\006\003"
     },
     d2 = {
-      "Lclasseiiiandiiiobjects/classeiiiandiiiinheritance/p1empty/Empty;",
+      "Lclasseiiiandiiiobjects/classeiiiandiiiinheritance/p1emptyiiiclass/Empty;",
       "",
       "()V",
       "yet-another-kotlin-vs-java-comparison"
