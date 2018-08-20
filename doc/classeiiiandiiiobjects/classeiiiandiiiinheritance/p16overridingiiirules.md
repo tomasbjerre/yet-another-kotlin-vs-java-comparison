@@ -43,23 +43,6 @@ class C() : A(), B {
 
 ## Java
 
-**Foo.java**
-
-```java
-package classeiiiandiiiobjects.classeiiiandiiiinheritance.p15inneriiiclass;
-
-public class Foo {
-  private final int x = 0;
-
-  public int getX() {
-    return this.x;
-  }
-
-  public void f() {}
-}
-
-```
-
 **C.java**
 
 ```java
@@ -119,31 +102,6 @@ public class A {
   public final void a() {
     String string = "a";
     System.out.print((Object) string);
-  }
-}
-
-```
-
-**Bar.java**
-
-```java
-package classeiiiandiiiobjects.classeiiiandiiiinheritance.p15inneriiiclass;
-
-public final class Bar extends Foo {
-  @Override
-  public void f() {}
-
-  @Override
-  public int getX() {
-    return 0;
-  }
-
-  public final class Baz {
-    public final void g() {
-      Bar.super.f();
-      int n = Bar.super.getX();
-      System.out.println(n);
-    }
   }
 }
 
