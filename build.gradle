@@ -97,6 +97,8 @@ task format(type: GoogleJavaFormat) {
 }
 format.dependsOn decompile
 
+import com.github.sherter.googlejavaformatgradleplugin.VerifyGoogleJavaFormat
+
 task verifyFormatting(type: VerifyGoogleJavaFormat) {
     exclude '**/*.java'
     ignoreFailures true
