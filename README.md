@@ -27,6 +27,9 @@ This one shows complete examples where the Kotlin code is compiled to bytecode a
     * [Copy](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/dataiiiclasses/p02copy.md)
     * [Destructing](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/dataiiiclasses/p03destructing.md)
     * [Data](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/dataiiiclasses/p10data.md)
+  * Generics 
+    * [Out Parameter](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/generics/p01outiiiparameter.md)
+    * [In Parameter](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/generics/p02iniiiparameter.md)
   * Sealed Classes 
     * [Sealed Class](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/sealediiiclasses/p01sealediiiclass.md)
     * [Not Sealed](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/sealediiiclasses/p02notiiisealed.md)
