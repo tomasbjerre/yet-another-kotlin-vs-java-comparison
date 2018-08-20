@@ -1,4 +1,4 @@
-package classeiiiandiiiobjects.classeiiiandiiiinheritance.p1empty;
+package classeiiiandiiiobjects.classeiiiandiiiinheritance.p1emptyiiiclass;
 
 import kotlin.Metadata;
 

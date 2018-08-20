@@ -1,4 +1,4 @@
-package classeiiiandiiiobjects.classeiiiandiiiinheritance.p2person;
+package classeiiiandiiiobjects.classeiiiandiiiinheritance.p2constructoriiiparam;
 
 import kotlin.Metadata;
 import org.jetbrains.annotations.NotNull;
