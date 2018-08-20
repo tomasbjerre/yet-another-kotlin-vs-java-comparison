@@ -23,4 +23,7 @@ This one shows complete examples where the Kotlin code is compiled to bytecode a
     * [Inner Class](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/classeiiiandiiiinheritance/p15inneriiiclass.md)
     * [Overriding Rules](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/classeiiiandiiiinheritance/p16overridingiiirules.md)
   * Data Classes 
+    * [Class Body And Constructor](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/dataiiiclasses/p01classiiibodyiiiandiiiconstructor.md)
+    * [Copy](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/dataiiiclasses/p02copy.md)
+    * [Destructing](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/dataiiiclasses/p03destructing.md)
     * [Data](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/dataiiiclasses/p10data.md)

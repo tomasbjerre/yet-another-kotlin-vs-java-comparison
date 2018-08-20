@@ -5,5 +5,5 @@ find src/main/java -regex ".*\.java$" -exec sed -i '/@Metadata/ d' {} \;
 find src/main/java -regex ".*\.java$" -exec sed -i '/^\/\*/ d' {} \;
 find src/main/java -regex ".*\.java$" -exec sed -i '/^ \*/ d' {} \;
 find src/main/java -regex ".*\.java$" -exec sed -i '/^ \*\// d' {} \;
-./gradlew googleJavaFormat -x verifyGoogleJavaFormat -i || exit
+./gradlew format -x verifyGoogleJavaFormat -i || exit
 ./gradlew generateComparison || exit

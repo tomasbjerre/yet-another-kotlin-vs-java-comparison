@@ -1,3 +1,3 @@
 package classeiiiandiiiobjects.dataiiiclasses.p10data
 
-data class Customer(val customerName: String)
+data class User(val name: String, val age: Int)

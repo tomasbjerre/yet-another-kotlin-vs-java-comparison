@@ -75,6 +75,7 @@ import com.github.sherter.googlejavaformatgradleplugin.GoogleJavaFormat
 task format(type: GoogleJavaFormat) {
     source 'src/main/java'
     include '**/*.java'
+    exclude '**/p03destructing/ExampleKt.java'
 }
 
 class GenerateComparisonTask extends DefaultTask {
