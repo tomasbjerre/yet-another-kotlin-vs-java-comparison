@@ -95,6 +95,7 @@ task format(type: GoogleJavaFormat) {
     source 'src/main/java'
     include '**/*.java'
     exclude '**/p5initiiifromiiiconstructor/*'
+    exclude '**/p7secondaryiiiconstructor/*'
 }
 format.dependsOn decompile
 
