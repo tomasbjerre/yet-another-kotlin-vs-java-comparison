@@ -1,0 +1,3 @@
+package classesiiiandiiiobjects.classesiiiandiiiinheritance.p01emptyiiiclass
+
+class Empty

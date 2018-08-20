@@ -76,6 +76,7 @@ task format(type: GoogleJavaFormat) {
     source 'src/main/java'
     include '**/*.java'
     exclude '**/p03destructing/ExampleKt.java'
+    exclude '**/p03copyiiioutiiiparameter/ExampleKt.java'
 }
 
 class GenerateComparisonTask extends DefaultTask {
@@ -177,8 +178,6 @@ ${fileContent}
 
     @TaskAction
     void doAction() {
-        new File("doc").deleteDir()
-
         Map<String, File> exampleDirs = getAllExampleDirs("/src/main/kotlin")
         Map<String, File> exampleDirResults = getAllExampleDirs("/src/main/java")
         Map<String, File> examples = new TreeMap<String, File>()
