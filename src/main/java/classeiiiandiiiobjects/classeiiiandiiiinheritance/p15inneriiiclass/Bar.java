@@ -1,9 +1,3 @@
-/*
- * Decompiled with CFR 0_132.
- *
- * Could not load the following classes:
- *  kotlin.Metadata
- */
 package classeiiiandiiiobjects.classeiiiandiiiinheritance.p15inneriiiclass;
 
 public final class Bar extends Foo {

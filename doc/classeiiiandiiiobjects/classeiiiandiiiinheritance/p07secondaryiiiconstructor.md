@@ -27,15 +27,6 @@ class Person(val name: String) {
 **Person.java**
 
 ```java
-/*
- * Decompiled with CFR 0_132.
- *
- * Could not load the following classes:
- *  kotlin.Metadata
- *  kotlin.jvm.internal.Intrinsics
- *  org.jetbrains.annotations.NotNull
- *  org.jetbrains.annotations.Nullable
- */
 package classeiiiandiiiobjects.classeiiiandiiiinheritance.p07secondaryiiiconstructor;
 
 import kotlin.jvm.internal.Intrinsics;

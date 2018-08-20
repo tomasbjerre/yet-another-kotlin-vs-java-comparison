@@ -1,10 +1,3 @@
-/*
- * Decompiled with CFR 0_132.
- *
- * Could not load the following classes:
- *  kotlin.Metadata
- *  org.jetbrains.annotations.NotNull
- */
 package classeiiiandiiiobjects.classeiiiandiiiinheritance.p13overrideiiimethod;
 
 import org.jetbrains.annotations.NotNull;

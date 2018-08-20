@@ -20,14 +20,6 @@ open class Customer(val customerName: String)
 **Customer.java**
 
 ```java
-/*
- * Decompiled with CFR 0_132.
- *
- * Could not load the following classes:
- *  kotlin.Metadata
- *  kotlin.jvm.internal.Intrinsics
- *  org.jetbrains.annotations.NotNull
- */
 package classeiiiandiiiobjects.classeiiiandiiiinheritance.p10open;
 
 import kotlin.jvm.internal.Intrinsics;

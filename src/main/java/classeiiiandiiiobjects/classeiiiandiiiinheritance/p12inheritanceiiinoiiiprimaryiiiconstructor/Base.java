@@ -1,12 +1,3 @@
-/*
- * Decompiled with CFR 0_132.
- *
- * Could not load the following classes:
- *  kotlin.Metadata
- *  kotlin.jvm.internal.Intrinsics
- *  org.jetbrains.annotations.NotNull
- *  org.jetbrains.annotations.Nullable
- */
 package classeiiiandiiiobjects.classeiiiandiiiinheritance.p12inheritanceiiinoiiiprimaryiiiconstructor;
 
 import kotlin.jvm.internal.Intrinsics;

@@ -32,14 +32,6 @@ class DerivedWithAttr2(attr1: String, attr2: Int) : Base(attr1, attr2)
 **DerivedWithAttr1.java**
 
 ```java
-/*
- * Decompiled with CFR 0_132.
- *
- * Could not load the following classes:
- *  kotlin.Metadata
- *  kotlin.jvm.internal.Intrinsics
- *  org.jetbrains.annotations.NotNull
- */
 package classeiiiandiiiobjects.classeiiiandiiiinheritance.p12inheritanceiiinoiiiprimaryiiiconstructor;
 
 import kotlin.jvm.internal.Intrinsics;
@@ -57,15 +49,6 @@ public final class DerivedWithAttr1 extends Base {
 **Base.java**
 
 ```java
-/*
- * Decompiled with CFR 0_132.
- *
- * Could not load the following classes:
- *  kotlin.Metadata
- *  kotlin.jvm.internal.Intrinsics
- *  org.jetbrains.annotations.NotNull
- *  org.jetbrains.annotations.Nullable
- */
 package classeiiiandiiiobjects.classeiiiandiiiinheritance.p12inheritanceiiinoiiiprimaryiiiconstructor;
 
 import kotlin.jvm.internal.Intrinsics;
@@ -114,14 +97,6 @@ public class Base {
 **DerivedWithAttr2.java**
 
 ```java
-/*
- * Decompiled with CFR 0_132.
- *
- * Could not load the following classes:
- *  kotlin.Metadata
- *  kotlin.jvm.internal.Intrinsics
- *  org.jetbrains.annotations.NotNull
- */
 package classeiiiandiiiobjects.classeiiiandiiiinheritance.p12inheritanceiiinoiiiprimaryiiiconstructor;
 
 import kotlin.jvm.internal.Intrinsics;

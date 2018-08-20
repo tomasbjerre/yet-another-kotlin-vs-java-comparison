@@ -41,14 +41,6 @@ class Derived(
 **Base.java**
 
 ```java
-/*
- * Decompiled with CFR 0_132.
- *
- * Could not load the following classes:
- *  kotlin.Metadata
- *  kotlin.jvm.internal.Intrinsics
- *  org.jetbrains.annotations.NotNull
- */
 package classeiiiandiiiobjects.classeiiiandiiiinheritance.p14derivediiiclassiiiinitializationiiiorder;
 
 import kotlin.jvm.internal.Intrinsics;
@@ -87,15 +79,6 @@ public class Base {
 **Derived.java**
 
 ```java
-/*
- * Decompiled with CFR 0_132.
- *
- * Could not load the following classes:
- *  kotlin.Metadata
- *  kotlin.jvm.internal.Intrinsics
- *  kotlin.text.StringsKt
- *  org.jetbrains.annotations.NotNull
- */
 package classeiiiandiiiobjects.classeiiiandiiiinheritance.p14derivediiiclassiiiinitializationiiiorder;
 
 import kotlin.jvm.internal.Intrinsics;

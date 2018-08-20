@@ -26,14 +26,6 @@ fun main(args: Array<String>) {
 **Customer.java**
 
 ```java
-/*
- * Decompiled with CFR 0_132.
- *
- * Could not load the following classes:
- *  kotlin.Metadata
- *  kotlin.jvm.internal.Intrinsics
- *  org.jetbrains.annotations.NotNull
- */
 package classeiiiandiiiobjects.classeiiiandiiiinheritance.p09instantiation;
 
 import kotlin.jvm.internal.Intrinsics;
@@ -58,12 +50,6 @@ public final class Customer {
 **Invoice.java**
 
 ```java
-/*
- * Decompiled with CFR 0_132.
- *
- * Could not load the following classes:
- *  kotlin.Metadata
- */
 package classeiiiandiiiobjects.classeiiiandiiiinheritance.p09instantiation;
 
 public final class Invoice {}
@@ -73,14 +59,6 @@ public final class Invoice {}
 **CustomerKt.java**
 
 ```java
-/*
- * Decompiled with CFR 0_132.
- *
- * Could not load the following classes:
- *  kotlin.Metadata
- *  kotlin.jvm.internal.Intrinsics
- *  org.jetbrains.annotations.NotNull
- */
 package classeiiiandiiiobjects.classeiiiandiiiinheritance.p09instantiation;
 
 import kotlin.jvm.internal.Intrinsics;
