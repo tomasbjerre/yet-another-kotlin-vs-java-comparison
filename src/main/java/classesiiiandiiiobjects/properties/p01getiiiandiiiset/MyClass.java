@@ -1,4 +1,4 @@
-package classesiiiandiiiobjects.properties.p02setteriiiwithiiiannotation;
+package classesiiiandiiiobjects.properties.p01getiiiandiiiset;
 
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import org.jetbrains.annotations.NotNull;

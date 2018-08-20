@@ -12,35 +12,53 @@
 ```kotlin
 package classesiiiandiiiobjects.properties.p01getiiiandiiiset
 
-import javax.inject.Inject
+interface Factory<T> {
+    fun create(): T
+}
 
-class Example {
-    var attrWithAnnotation: Any? = null
-        @Inject set // annotate the setter with Inject
+class MyClass {
+    companion object : Factory<MyClass> {
+        override fun create(): MyClass = MyClass()
+    }
 }
 ```
 
 ## Java
 
-**Example.java**
+**Factory.java**
 
 ```java
 package classesiiiandiiiobjects.properties.p01getiiiandiiiset;
 
-import javax.inject.Inject;
-import org.jetbrains.annotations.Nullable;
+public interface Factory<T> {
+  public T create();
+}
 
-public final class Example {
-  @Nullable private Object attrWithAnnotation;
+```
 
-  @Nullable
-  public final Object getAttrWithAnnotation() {
-    return this.attrWithAnnotation;
-  }
+**MyClass.java**
 
-  @Inject
-  public final void setAttrWithAnnotation(@Nullable Object object) {
-    this.attrWithAnnotation = object;
+```java
+package classesiiiandiiiobjects.properties.p01getiiiandiiiset;
+
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import org.jetbrains.annotations.NotNull;
+
+public final class MyClass {
+  public static final Companion Companion = new Companion(null);
+
+  public static final class Companion implements Factory<MyClass> {
+    @NotNull
+    @Override
+    public MyClass create() {
+      return new MyClass();
+    }
+
+    private Companion() {}
+
+    public /* synthetic */ Companion(DefaultConstructorMarker $constructor_marker) {
+      this();
+    }
   }
 }
 

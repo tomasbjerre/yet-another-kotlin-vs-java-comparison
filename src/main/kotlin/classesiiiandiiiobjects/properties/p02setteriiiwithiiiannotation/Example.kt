@@ -1,11 +1,8 @@
 package classesiiiandiiiobjects.properties.p02setteriiiwithiiiannotation
 
-interface Factory<T> {
-    fun create(): T
-}
+import javax.inject.Inject
 
-class MyClass {
-    companion object : Factory<MyClass> {
-        override fun create(): MyClass = MyClass()
-    }
+class Example {
+    var attrWithAnnotation: Any? = null
+        @Inject set // annotate the setter with Inject
 }

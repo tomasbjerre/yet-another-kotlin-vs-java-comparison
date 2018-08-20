@@ -1,4 +1,4 @@
-package classesiiiandiiiobjects.properties.p01getiiiandiiiset;
+package classesiiiandiiiobjects.properties.p02setteriiiwithiiiannotation;
 
 import javax.inject.Inject;
 import org.jetbrains.annotations.Nullable;
