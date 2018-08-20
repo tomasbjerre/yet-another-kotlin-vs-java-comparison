@@ -21,7 +21,7 @@ buildscript {
 
 
 apply plugin: 'kotlin'
-//apply plugin: "com.github.sherter.google-java-format"
+apply plugin: "com.github.sherter.google-java-format"
 
 group = 'se.bjurr.kotlinvsjava'
 version = '0.0.1-SNAPSHOT'
@@ -93,16 +93,10 @@ import com.github.sherter.googlejavaformatgradleplugin.GoogleJavaFormat
 
 task format(type: GoogleJavaFormat) {
     source 'src/main/java'
-    exclude '**/*.java'
+    include '**/*.java'
+    exclude '**/p5initiiifromiiiconstructor/*'
 }
 format.dependsOn decompile
-
-import com.github.sherter.googlejavaformatgradleplugin.VerifyGoogleJavaFormat
-
-task verifyFormatting(type: VerifyGoogleJavaFormat) {
-    exclude '**/*.java'
-    ignoreFailures true
-}
 
 class GenerateComparisonTask extends DefaultTask {
 

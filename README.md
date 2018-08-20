@@ -6,6 +6,9 @@ This one shows complete examples where the Kotlin code is compiled to bytecode a
 ## Examples
 * Classe And Objects 
   * Classe And Inheritance 
-    * [Empty](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/classeiiiandiiiinheritance/p1empty.md)
-    * [Person](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/classeiiiandiiiinheritance/p2person.md)
+    * [Empty Class](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/classeiiiandiiiinheritance/p1emptyiiiclass.md)
+    * [Constructor Param](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/classeiiiandiiiinheritance/p2constructoriiiparam.md)
     * [Init Order Demo](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/classeiiiandiiiinheritance/p3initiiiorderiiidemo.md)
+    * [Constructor To Attribute](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/classeiiiandiiiinheritance/p4constructoriiitoiiiattribute.md)
+    * [Init From Constructor](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/classeiiiandiiiinheritance/p5initiiifromiiiconstructor.md)
+    * [Constructor With Annotation](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/classeiiiandiiiinheritance/p6constructoriiiwithiiiannotation.md)

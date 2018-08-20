@@ -1,2 +1,2 @@
 #!/bin/bash
-./gradlew generateComparison -i
+./gradlew generateComparison -x verifyGoogleJavaFormat || ./gradlew generateComparison -x verifyGoogleJavaFormat -i

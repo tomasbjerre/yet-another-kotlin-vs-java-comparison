@@ -1,3 +1,27 @@
+
+[<< back](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison)
+
+-----------------------------
+
+# Constructor To Attribute
+
+## Kotlin
+
+**Customer.kt**
+
+```kotlin
+package classeiiiandiiiobjects.classeiiiandiiiinheritance.p4constructoriiitoiiiattribute
+
+class Customer(name: String) {
+    val customerKey = name.toUpperCase()
+}
+```
+
+## Java
+
+**Customer.java**
+
+```java
 package classeiiiandiiiobjects.classeiiiandiiiinheritance.p4constructoriiitoiiiattribute;
 
 import org.jetbrains.annotations.NotNull;
@@ -38,3 +62,5 @@ public final class Customer {
 
   @NotNull private final String customerKey;
 }
+
+```

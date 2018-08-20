@@ -1,3 +1,27 @@
+
+[<< back](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison)
+
+-----------------------------
+
+# Constructor With Annotation
+
+## Kotlin
+
+**Person.kt**
+
+```kotlin
+package classeiiiandiiiobjects.classeiiiandiiiinheritance.p6constructoriiiwithiiiannotation
+
+import javax.inject.Inject
+
+class Person @Inject public constructor(name: String)
+```
+
+## Java
+
+**Person.java**
+
+```java
 package classeiiiandiiiobjects.classeiiiandiiiinheritance.p6constructoriiiwithiiiannotation;
 
 import javax.inject.Inject;
@@ -23,3 +47,5 @@ public final class Person {
   @Inject
   public Person(@NotNull String name) {}
 }
+
+```
