@@ -35,6 +35,12 @@ This one shows complete examples where the Kotlin code is compiled to bytecode a
     * [Nested Class](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/nestediiiclasses/p01nestediiiclass.md)
     * [Inner Class](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/nestediiiclasses/p02inneriiiclass.md)
     * [Anonymous Class](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/nestediiiclasses/p03anonymousiiiclass.md)
+  * Objects 
+    * [Just An Object](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/objects/p01justiiianiiiobject.md)
+    * [Companion](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/objects/p02companion.md)
+  * Roperties 
+    * [Get And Set](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/properties/p01getiiiandiiiset.md)
+    * [Setter With Annotation](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/properties/p02setteriiiwithiiiannotation.md)
   * Sealed Classes 
     * [Sealed Class](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/sealediiiclasses/p01sealediiiclass.md)
     * [Not Sealed](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/sealediiiclasses/p02notiiisealed.md)
