@@ -76,7 +76,6 @@ task format(type: GoogleJavaFormat) {
     source 'src/main/java'
     include '**/*.java'
 }
-build.dependsOn format
 
 class GenerateComparisonTask extends DefaultTask {
 
