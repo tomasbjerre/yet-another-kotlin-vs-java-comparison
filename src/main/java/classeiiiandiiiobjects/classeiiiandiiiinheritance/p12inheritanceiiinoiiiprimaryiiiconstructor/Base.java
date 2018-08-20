@@ -9,37 +9,10 @@
  */
 package classeiiiandiiiobjects.classeiiiandiiiinheritance.p12inheritanceiiinoiiiprimaryiiiconstructor;
 
-import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-@Metadata(
-    mv = {1, 1, 11},
-    bv = {1, 0, 2},
-    k = 1,
-    d1 = {
-      "\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\n\b\u0016\u0018\u00002\u00020\u0001B\u000f\b\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004B\u0017\b\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u00a2\u0006\u0002\u0010\u0007B%\b\u0002\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0003\u00a2\u0006\u0002\u0010\tR\u0013\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u00a2\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000bR\u0015\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u00a2\u0006\n\n\u0002\u0010\u000e\u001a\u0004\b\f\u0010\rR\u0013\u0010\b\u001a\u0004\u0018\u00010\u0003\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u000b\u00a8\u0006\u0010"
-    },
-    d2 = {
-      "Lclasseiiiandiiiobjects/classeiiiandiiiinheritance/p12inheritanceiiinoiiiprimaryiiiconstructor/Base;",
-      "",
-      "attr1",
-      "",
-      "(Ljava/lang/String;)V",
-      "attr2",
-      "",
-      "(Ljava/lang/String;I)V",
-      "attr3",
-      "(Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;)V",
-      "getAttr1",
-      "()Ljava/lang/String;",
-      "getAttr2",
-      "()Ljava/lang/Integer;",
-      "Ljava/lang/Integer;",
-      "getAttr3",
-      "yet-another-kotlin-vs-java-comparison"
-    })
 public class Base {
   @Nullable private final String attr1;
   @Nullable private final Integer attr2;
