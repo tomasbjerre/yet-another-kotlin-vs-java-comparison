@@ -21,5 +21,6 @@ This one shows complete examples where the Kotlin code is compiled to bytecode a
     * [Override Method](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/classeiiiandiiiinheritance/p13overrideiiimethod.md)
     * [Derived Class Initialization Order](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/classeiiiandiiiinheritance/p14derivediiiclassiiiinitializationiiiorder.md)
     * [Inner Class](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/classeiiiandiiiinheritance/p15inneriiiclass.md)
+    * [Overriding Rules](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/classeiiiandiiiinheritance/p16overridingiiirules.md)
   * Data Classes 
     * [Data](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/dataiiiclasses/p10data.md)
