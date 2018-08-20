@@ -1,10 +1,10 @@
 package classeiiiandiiiobjects.classeiiiandiiiinheritance.p7secondaryiiiconstructor
 
-class Person() {
+class Person(val name: String) {
 
     var parent: Person? = null
 
-    constructor(parent: Person) : this() {
+    constructor(name: String, parent: Person) : this(name) {
         parent.parent = this
     }
 }
