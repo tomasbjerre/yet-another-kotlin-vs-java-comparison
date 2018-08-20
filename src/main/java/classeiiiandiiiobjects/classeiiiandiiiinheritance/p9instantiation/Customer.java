@@ -6,7 +6,7 @@
  *  kotlin.jvm.internal.Intrinsics
  *  org.jetbrains.annotations.NotNull
  */
-package classeiiiandiiiobjects.classeiiiandiiiinheritance.p9instantiation;
+package classeiiiandiiiobjects.classeiiiandiiiinheritance.p09instantiation;
 
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;

@@ -1,3 +1,26 @@
+
+[<< back](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison)
+
+-----------------------------
+
+# Init From Constructor
+
+## Kotlin
+
+**Person.kt**
+
+```kotlin
+package classeiiiandiiiobjects.classeiiiandiiiinheritance.p05initiiifromiiiconstructor
+
+class Person(val firstName: String, val lastName: String, var age: Int)
+
+```
+
+## Java
+
+**Person.java**
+
+```java
 /*
  * Decompiled with CFR 0_132.
  *
@@ -20,7 +43,7 @@ import org.jetbrains.annotations.NotNull;
       "\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\t\u0018\u00002\u00020\u0001B\u001d\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u00a2\u0006\u0002\u0010\u0007R\u001a\u0010\u0005\u001a\u00020\u0006X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\b\u0010\t\"\u0004\b\n\u0010\u000bR\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR\u0011\u0010\u0004\u001a\u00020\u0003\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\r\u00a8\u0006\u000f"
     },
     d2 = {
-      "Lclasseiiiandiiiobjects/classeiiiandiiiinheritance/p5initiiifromiiiconstructor/Person;",
+      "Lclasseiiiandiiiobjects/classeiiiandiiiinheritance/p05initiiifromiiiconstructor/Person;",
       "",
       "firstName",
       "",
@@ -68,3 +91,5 @@ public final class Person {
     this.age = age;
   }
 }
+
+```

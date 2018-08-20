@@ -1,3 +1,25 @@
+
+[<< back](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison)
+
+-----------------------------
+
+# Constructor Param
+
+## Kotlin
+
+**Person.kt**
+
+```kotlin
+package classeiiiandiiiobjects.classeiiiandiiiinheritance.p02constructoriiiparam
+
+class Person constructor(firstName: String)
+```
+
+## Java
+
+**Person.java**
+
+```java
 /*
  * Decompiled with CFR 0_132.
  *
@@ -20,7 +42,7 @@ import org.jetbrains.annotations.NotNull;
       "\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004\u00a8\u0006\u0005"
     },
     d2 = {
-      "Lclasseiiiandiiiobjects/classeiiiandiiiinheritance/p2constructoriiiparam/Person;",
+      "Lclasseiiiandiiiobjects/classeiiiandiiiinheritance/p02constructoriiiparam/Person;",
       "",
       "firstName",
       "",
@@ -32,3 +54,5 @@ public final class Person {
     Intrinsics.checkParameterIsNotNull((Object) firstName, (String) "firstName");
   }
 }
+
+```

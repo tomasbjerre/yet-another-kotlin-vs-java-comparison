@@ -1,3 +1,0 @@
-package classeiiiandiiiobjects.classeiiiandiiiinheritance.p2constructoriiiparam
-
-class Person constructor(firstName: String)

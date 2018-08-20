@@ -4,7 +4,7 @@
  * Could not load the following classes:
  *  kotlin.Metadata
  */
-package classeiiiandiiiobjects.classeiiiandiiiinheritance.p9instantiation;
+package classeiiiandiiiobjects.classeiiiandiiiinheritance.p09instantiation;
 
 import kotlin.Metadata;
 
