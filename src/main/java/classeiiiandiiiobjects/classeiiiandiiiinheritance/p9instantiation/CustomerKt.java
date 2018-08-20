@@ -3,7 +3,6 @@
  *
  * Could not load the following classes:
  *  kotlin.Metadata
- *  kotlin.jvm.internal.DefaultConstructorMarker
  *  kotlin.jvm.internal.Intrinsics
  *  org.jetbrains.annotations.NotNull
  */
@@ -33,6 +32,6 @@ public final class CustomerKt {
   public static final void main(@NotNull String[] args) {
     Intrinsics.checkParameterIsNotNull((Object) args, (String) "args");
     Invoice invoiceInstance = new Invoice();
-    Customer customerInstance = new Customer(null, 1, null);
+    Customer customerInstance = new Customer("The Name");
   }
 }
