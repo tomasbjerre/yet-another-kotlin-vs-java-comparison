@@ -1,4 +1,4 @@
-package se.bjurr.kotlinvsjava.classessspaceandsspaceobjects.classessspaceandsspaceinheritance.p3
+package se.bjurr.kotlinvsjava.classessspaceandsspaceobjects.classessspaceandsspaceinheritance.p3sspacaeinnersspaceordersspacedemo
 
 class InitOrderDemo(name: String) {
     val firstProperty = "First property: $name".also(::println)

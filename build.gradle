@@ -102,18 +102,18 @@ class GenerateComparisonTask extends DefaultTask {
         Map<String, File> found = new TreeMap<String, String>()
         File rootDir = new File(project.getRootDir().getAbsolutePath() + folder)
         rootDir.eachDirRecurse() { dir ->
-            if (dir.getName().endsWith("p1")) {
+            if (dir.getName().matches(/^p[0-9]+?.*/)) {
                 File parentFile = new File(dir.getParent())
                 String parent = parentFile.getName()
                 String parentParent = new File(parentFile.getParent()).getName()
-                found.put(parentParent + "/" + parent + "/p1", dir)
+                found.put(parentParent + "/" + parent + "/" + dir.getName(), dir)
             }
         }
         found
     }
 
-    def generateDoc(String exampleNamePretty, File exampleDir, File resultDir) {
-        println "${exampleNamePretty}"
+    def generateDoc(String exampleName, File exampleDir, File resultDir) {
+        println "${exampleName}"
         Map<String, String> exampleInputs = exampleDir
                 .listFiles()
                 .collectEntries({ [(it.getName()), it.getText("UTF-8")] })
@@ -122,7 +122,11 @@ class GenerateComparisonTask extends DefaultTask {
                 .collectEntries({ [(it.getName()), it.getText("UTF-8")] })
 
         String doc = """
-# ${exampleNamePretty}
+# ${
+            exampleName.split("/").reverse()[0].replaceAll(/^p[0-9]+?/, "").replaceAll("sspace", " ").split(" ").collect({
+                it.capitalize()
+            }).join(" ")
+        }
 """.stripMargin()
 
 
@@ -153,40 +157,76 @@ ${fileContent}
 
 
         }
-        println(doc)
 
-        File docFile = new File(project.getRootDir().getAbsolutePath() + "/doc/" + exampleNamePretty.replaceAll(" ", "_") + ".md")
+        def dir = project.getRootDir().getAbsolutePath() + "/doc"
+        File docFile = new File(dir + "/" + exampleName + ".md")
+        println("Creating ${docFile}")
+        docFile.getParentFile().mkdirs()
         docFile.createNewFile()
         docFile.write(doc)
         return docFile
     }
 
+    Map<String, Map<String, Map<String, String>>> getByCategory(Map<String, String> examples) {
+        Map<String, Map<String, Map<String, String>>> to = new TreeMap<>()
+        examples.each { categoryPath, filePath ->
+            def parts = categoryPath.split("/")
+            def mainCategory = parts[0]
+            def subCategory = parts[1]
+            def subSubCategory = parts[2]
+            if (!to.containsKey(mainCategory)) {
+                to.put(mainCategory, new TreeMap<>())
+            }
+            if (!to.get(mainCategory).containsKey(subCategory)) {
+                to.get(mainCategory).put(subCategory, new TreeMap<>())
+            }
+            to.get(mainCategory).get(subCategory).put(subSubCategory, filePath)
+        }
+        return to
+    }
 
     @TaskAction
     void doAction() {
         Map<String, File> exampleDirs = getAllExampleDirs("/src/main/kotlin")
         Map<String, File> exampleDirResults = getAllExampleDirs("/src/main/java")
         Map<String, File> examples = new TreeMap<String, File>()
+
         exampleDirs.each { exampleName, exampleDir ->
             File resultDir = exampleDirResults[exampleName]
-            String exampleNamePretty = exampleName.replaceAll("sspace", " ")
-            File generated = generateDoc(exampleNamePretty, exampleDir, resultDir)
+            File generated = generateDoc(exampleName, exampleDir, resultDir)
             String generatedRelative = generated.getAbsolutePath().replaceAll(project.getRootDir().getAbsolutePath(), "")
-            examples.put(exampleNamePretty, generatedRelative)
+            examples.put(exampleName, generatedRelative)
         }
 
         String readmeMd = """
 # Yet Another Kotlin VS Java Comparison
 
-This one shows complete examples where the Kotlin code is compled to bytecode and decompiled to Java. Enabling a person familiar with Java to very quickly understand Kotlin.
+This one shows complete examples where the Kotlin code is compiled to bytecode and decompiled to Java. Enabling a person familiar with Java to very quickly understand Kotlin.
 
 ## Examples
 """
-        examples.each { fileName, filePath ->
-            readmeMd += """
-* [${fileName}](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master${filePath})
-""".stripMargin()
+
+        Map<String, Map<String, Map<String, String>>> examplesByCategory = getByCategory(examples)
+
+        examplesByCategory.each { mainCategory, subCategories ->
+            def mainTitle = mainCategory.split("/").reverse()[0].replaceAll(/^p[0-9]+?/, "").replaceAll("sspace", " ").split(" ").collect({
+                it.capitalize().trim()
+            }).join(" ")
+            readmeMd += "* ${mainTitle} \n"
+            subCategories.each { subCategory, filePaths ->
+                def subCategoryTitle = subCategory.split("/").reverse()[0].replaceAll(/^p[0-9]+?/, "").replaceAll("sspace", " ").split(" ").collect({
+                    it.capitalize().trim()
+                }).join(" ")
+                readmeMd += "  * ${subCategoryTitle} \n"
+                filePaths.each { fileName, filePath ->
+                    def fileNameTitle = fileName.split("/").reverse()[0].replaceAll(/^p[0-9]+?/, "").replaceAll("sspace", " ").split(" ").collect({
+                        it.capitalize().trim()
+                    }).join(" ")
+                    readmeMd += "    * [${fileNameTitle}](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master${filePath})\n"
+                }
+            }
         }
+
         File mainDocFile = new File(project.getRootDir().getAbsolutePath() + "/README.md")
         mainDocFile.createNewFile()
         mainDocFile.write(readmeMd)
