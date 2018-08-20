@@ -94,6 +94,7 @@ import com.github.sherter.googlejavaformatgradleplugin.GoogleJavaFormat
 task format(type: GoogleJavaFormat) {
     source 'src/main/java'
     include '**/*.java'
+    ignoreFailures true
 }
 format.dependsOn decompile
 
