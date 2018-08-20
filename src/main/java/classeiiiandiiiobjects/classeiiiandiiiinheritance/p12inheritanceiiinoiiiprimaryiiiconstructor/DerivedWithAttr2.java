@@ -17,19 +17,21 @@ import org.jetbrains.annotations.NotNull;
     bv = {1, 0, 2},
     k = 1,
     d1 = {
-      "\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004\u00a8\u0006\u0005"
+      "\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006\u00a8\u0006\u0007"
     },
     d2 = {
       "Lclasseiiiandiiiobjects/classeiiiandiiiinheritance/p12inheritanceiiinoiiiprimaryiiiconstructor/DerivedWithAttr2;",
       "Lclasseiiiandiiiobjects/classeiiiandiiiinheritance/p12inheritanceiiinoiiiprimaryiiiconstructor/Base;",
+      "attr1",
+      "",
       "attr2",
       "",
-      "(Ljava/lang/String;)V",
+      "(Ljava/lang/String;I)V",
       "yet-another-kotlin-vs-java-comparison"
     })
 public final class DerivedWithAttr2 extends Base {
-  public DerivedWithAttr2(@NotNull String attr2) {
-    Intrinsics.checkParameterIsNotNull((Object) attr2, (String) "attr2");
-    super(attr2);
+  public DerivedWithAttr2(@NotNull String attr1, int attr2) {
+    Intrinsics.checkParameterIsNotNull((Object) attr1, (String) "attr1");
+    super(attr1, attr2);
   }
 }

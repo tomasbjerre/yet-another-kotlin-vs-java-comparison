@@ -11,4 +11,4 @@ open class Base private constructor(
 
 class DerivedWithAttr1(attr1: String) : Base(attr1)
 
-class DerivedWithAttr2(attr2: String) : Base(attr2)
+class DerivedWithAttr2(attr1: String, attr2: Int) : Base(attr1, attr2)
