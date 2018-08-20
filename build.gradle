@@ -26,6 +26,9 @@ apply plugin: "com.github.sherter.google-java-format"
 group = 'se.bjurr.kotlinvsjava'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
+sourceSets {
+    main.java.srcDirs = []
+}
 compileKotlin {
     kotlinOptions {
         freeCompilerArgs = ["-Xjsr305=strict", "-java-parameters"]
@@ -73,20 +76,31 @@ class DecompileTask extends DefaultTask {
 
     @TaskAction
     def decompiling() {
-        println "From jar: "+decompileJar
+        println "From jar: " + decompileJar
         new jd.core.Decompiler().decompile(decompileJar.getAbsolutePath(), decompiledPath.getAbsolutePath())
     }
 }
 
 task decompile(type: DecompileTask) {
-    decompileJar = file(project.getBuildDir().getAbsolutePath()+"/libs/yet-another-kotlin-vs-java-comparison-0.0.1-SNAPSHOT.jar")
-    decompiledPath = file(project.getBuildDir().getAbsolutePath()+"/../src/main/java")
+    decompileJar = file(project.getBuildDir().getAbsolutePath() + "/libs/yet-another-kotlin-vs-java-comparison-0.0.1-SNAPSHOT.jar")
+    decompiledPath = file(project.getBuildDir().getAbsolutePath() + "/../src/main/java")
 }
 decompile.dependsOn build
 
 import com.github.sherter.googlejavaformatgradleplugin.GoogleJavaFormat
+
 task format(type: GoogleJavaFormat) {
     source 'src/main/java'
     include '**/*.java'
 }
 format.dependsOn decompile
+
+class GenerateComparisonTask extends DefaultTask {
+    @TaskAction
+    void doAction() {
+        println("Lets do it!")
+    }
+}
+
+task generateComparison(type: GenerateComparisonTask)
+generateComparison.dependsOn format
