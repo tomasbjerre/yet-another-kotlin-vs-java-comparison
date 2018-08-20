@@ -16,5 +16,7 @@ This one shows complete examples where the Kotlin code is compiled to bytecode a
     * [Default Values](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/classeiiiandiiiinheritance/p08defaultiiivalues.md)
     * [Instantiation](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/classeiiiandiiiinheritance/p09instantiation.md)
     * [Open](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/classeiiiandiiiinheritance/p10open.md)
+    * [Inheritance](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/classeiiiandiiiinheritance/p11inheritance.md)
+    * [Inheritance No Primary Constructor](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/classeiiiandiiiinheritance/p12inheritanceiiinoiiiprimaryiiiconstructor.md)
   * Data Classes 
     * [Data](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classeiiiandiiiobjects/dataiiiclasses/p10data.md)
