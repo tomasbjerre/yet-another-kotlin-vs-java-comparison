@@ -1,12 +1,12 @@
 
-# Sspacaeinner Order Demo
+# Init Order Demo
 
 ## Kotlin
 
 **InitOrderDemo.kt**
 
 ```
-package se.bjurr.kotlinvsjava.classessspaceandsspaceobjects.classessspaceandsspaceinheritance.p3sspacaeinnersspaceordersspacedemo
+package se.bjurr.kotlinvsjava.classeiiiandiiiobjects.classeiiiandiiiinheritance.p3initiiiorderiiidemo
 
 class InitOrderDemo(name: String) {
     val firstProperty = "First property: $name".also(::println)
@@ -28,7 +28,7 @@ class InitOrderDemo(name: String) {
 **InitOrderDemo.java**
 
 ```
-package se.bjurr.kotlinvsjava.classessspaceandsspaceobjects.classessspaceandsspaceinheritance.p3sspacaeinnersspaceordersspacedemo;
+package se.bjurr.kotlinvsjava.classeiiiandiiiobjects.classeiiiandiiiinheritance.p3initiiiorderiiidemo;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -40,7 +40,7 @@ import org.jetbrains.annotations.NotNull;
       "\000\022\n\002\030\002\n\002\020\000\n\000\n\002\020\016\n\002\b\007\030\0002\0020\001B\r\022\006\020\002\032\0020\003¢\006\002\020\004R\021\020\005\032\0020\003¢\006\b\n\000\032\004\b\006\020\007R\021\020\b\032\0020\003¢\006\b\n\000\032\004\b\t\020\007¨\006\n"
     },
     d2 = {
-      "Lse/bjurr/kotlinvsjava/classessspaceandsspaceobjects/classessspaceandsspaceinheritance/p3sspacaeinnersspaceordersspacedemo/InitOrderDemo;",
+      "Lse/bjurr/kotlinvsjava/classeiiiandiiiobjects/classeiiiandiiiinheritance/p3initiiiorderiiidemo/InitOrderDemo;",
       "",
       "name",
       "",

@@ -1,0 +1,3 @@
+package se.bjurr.kotlinvsjava.classeiiiandiiiobjects.classeiiiandiiiinheritance.p1iiiempty
+
+class Empty

@@ -1,3 +1,0 @@
-package se.bjurr.kotlinvsjava.classessspaceandsspaceobjects.classessspaceandsspaceinheritance.p2sspaceperson
-
-class Person constructor(firstName: String)

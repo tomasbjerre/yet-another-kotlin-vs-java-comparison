@@ -116,17 +116,15 @@ class GenerateComparisonTask extends DefaultTask {
         println "${exampleName}"
         Map<String, String> exampleInputs = exampleDir
                 .listFiles()
+                .findAll({ it.isFile() })
                 .collectEntries({ [(it.getName()), it.getText("UTF-8")] })
         Map<String, String> exampleOutputs = resultDir
                 .listFiles()
+                .findAll({ it.isFile() })
                 .collectEntries({ [(it.getName()), it.getText("UTF-8")] })
 
         String doc = """
-# ${
-            exampleName.split("/").reverse()[0].replaceAll(/^p[0-9]+?/, "").replaceAll("sspace", " ").split(" ").collect({
-                it.capitalize()
-            }).join(" ")
-        }
+# ${pretty(exampleName)}
 """.stripMargin()
 
 
@@ -185,13 +183,22 @@ ${fileContent}
         return to
     }
 
+    def pretty(String from) {
+        from.split("/").reverse()[0].replaceAll(/^p[0-9]+?/, "").replaceAll("iii", " ").split(" ").collect({
+            it.capitalize().trim()
+        }).join(" ").trim()
+    }
+
     @TaskAction
     void doAction() {
+        new File("doc").deleteDir()
+
         Map<String, File> exampleDirs = getAllExampleDirs("/src/main/kotlin")
         Map<String, File> exampleDirResults = getAllExampleDirs("/src/main/java")
         Map<String, File> examples = new TreeMap<String, File>()
 
         exampleDirs.each { exampleName, exampleDir ->
+            println "hanterar \"${exampleName}\" ${exampleDirResults}"
             File resultDir = exampleDirResults[exampleName]
             File generated = generateDoc(exampleName, exampleDir, resultDir)
             String generatedRelative = generated.getAbsolutePath().replaceAll(project.getRootDir().getAbsolutePath(), "")
@@ -209,19 +216,13 @@ This one shows complete examples where the Kotlin code is compiled to bytecode a
         Map<String, Map<String, Map<String, String>>> examplesByCategory = getByCategory(examples)
 
         examplesByCategory.each { mainCategory, subCategories ->
-            def mainTitle = mainCategory.split("/").reverse()[0].replaceAll(/^p[0-9]+?/, "").replaceAll("sspace", " ").split(" ").collect({
-                it.capitalize().trim()
-            }).join(" ")
+            def mainTitle = pretty(mainCategory)
             readmeMd += "* ${mainTitle} \n"
             subCategories.each { subCategory, filePaths ->
-                def subCategoryTitle = subCategory.split("/").reverse()[0].replaceAll(/^p[0-9]+?/, "").replaceAll("sspace", " ").split(" ").collect({
-                    it.capitalize().trim()
-                }).join(" ")
+                def subCategoryTitle = pretty(subCategory)
                 readmeMd += "  * ${subCategoryTitle} \n"
                 filePaths.each { fileName, filePath ->
-                    def fileNameTitle = fileName.split("/").reverse()[0].replaceAll(/^p[0-9]+?/, "").replaceAll("sspace", " ").split(" ").collect({
-                        it.capitalize().trim()
-                    }).join(" ")
+                    def fileNameTitle = pretty(fileName)
                     readmeMd += "    * [${fileNameTitle}](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master${filePath})\n"
                 }
             }

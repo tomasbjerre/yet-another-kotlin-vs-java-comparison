@@ -1,12 +1,12 @@
 
-# 
+# Person
 
 ## Kotlin
 
 **Person.kt**
 
 ```
-package se.bjurr.kotlinvsjava.classessspaceandsspaceobjects.classessspaceandsspaceinheritance.p2
+package se.bjurr.kotlinvsjava.classeiiiandiiiobjects.classeiiiandiiiinheritance.p2iiiperson
 
 class Person constructor(firstName: String)
 ```
@@ -16,7 +16,7 @@ class Person constructor(firstName: String)
 **Person.java**
 
 ```
-package se.bjurr.kotlinvsjava.classessspaceandsspaceobjects.classessspaceandsspaceinheritance.p2;
+package se.bjurr.kotlinvsjava.classeiiiandiiiobjects.classeiiiandiiiinheritance.p2iiiperson;
 
 import kotlin.Metadata;
 import org.jetbrains.annotations.NotNull;
@@ -29,7 +29,7 @@ import org.jetbrains.annotations.NotNull;
       "\000\022\n\002\030\002\n\002\020\000\n\000\n\002\020\016\n\002\b\002\030\0002\0020\001B\r\022\006\020\002\032\0020\003¢\006\002\020\004¨\006\005"
     },
     d2 = {
-      "Lse/bjurr/kotlinvsjava/classessspaceandsspaceobjects/classessspaceandsspaceinheritance/p2/Person;",
+      "Lse/bjurr/kotlinvsjava/classeiiiandiiiobjects/classeiiiandiiiinheritance/p2iiiperson/Person;",
       "",
       "firstName",
       "",

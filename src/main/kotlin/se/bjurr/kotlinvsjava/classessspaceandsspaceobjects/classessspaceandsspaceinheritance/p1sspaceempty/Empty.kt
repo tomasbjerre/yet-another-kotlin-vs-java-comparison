@@ -1,3 +1,0 @@
-package se.bjurr.kotlinvsjava.classessspaceandsspaceobjects.classessspaceandsspaceinheritance.p1sspaceempty
-
-class Empty
