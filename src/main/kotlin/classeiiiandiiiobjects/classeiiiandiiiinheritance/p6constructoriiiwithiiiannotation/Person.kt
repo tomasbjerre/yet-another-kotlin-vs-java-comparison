@@ -1,3 +1,3 @@
 package classeiiiandiiiobjects.classeiiiandiiiinheritance.p6constructoriiiwithiiiannotation
 
-class Person public @Deprecated constructor(name: String)
+class Person public @Inject constructor(name: String)
