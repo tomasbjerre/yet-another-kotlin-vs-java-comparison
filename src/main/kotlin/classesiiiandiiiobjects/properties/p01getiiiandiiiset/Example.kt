@@ -1,11 +1,14 @@
 package classesiiiandiiiobjects.properties.p01getiiiandiiiset
 
-interface Factory<T> {
-    fun create(): T
-}
+class Example(var size: Int) {
 
-class MyClass {
-    companion object : Factory<MyClass> {
-        override fun create(): MyClass = MyClass()
-    }
+    var isEmpty: Boolean
+        get() {
+            return size == 0
+        }
+        set(value) {
+            if (value) {
+                size = 0
+            }
+        }
 }

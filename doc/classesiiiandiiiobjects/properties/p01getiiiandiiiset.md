@@ -12,53 +12,50 @@
 ```kotlin
 package classesiiiandiiiobjects.properties.p01getiiiandiiiset
 
-interface Factory<T> {
-    fun create(): T
-}
+class Example(var size: Int) {
 
-class MyClass {
-    companion object : Factory<MyClass> {
-        override fun create(): MyClass = MyClass()
-    }
+    var isEmpty: Boolean
+        get() {
+            return size == 0
+        }
+        set(value) {
+            if (value) {
+                size = 0
+            }
+        }
 }
 ```
 
 ## Java
 
-**Factory.java**
+**Example.java**
 
 ```java
 package classesiiiandiiiobjects.properties.p01getiiiandiiiset;
 
-public interface Factory<T> {
-  public T create();
-}
+public final class Example {
+  private int size;
 
-```
+  public final boolean isEmpty() {
+    return this.size == 0;
+  }
 
-**MyClass.java**
-
-```java
-package classesiiiandiiiobjects.properties.p01getiiiandiiiset;
-
-import kotlin.jvm.internal.DefaultConstructorMarker;
-import org.jetbrains.annotations.NotNull;
-
-public final class MyClass {
-  public static final Companion Companion = new Companion(null);
-
-  public static final class Companion implements Factory<MyClass> {
-    @NotNull
-    @Override
-    public MyClass create() {
-      return new MyClass();
+  public final void setEmpty(boolean value) {
+    if (value) {
+      this.size = 0;
     }
+  }
 
-    private Companion() {}
+  public final int getSize() {
+    return this.size;
+  }
 
-    public /* synthetic */ Companion(DefaultConstructorMarker $constructor_marker) {
-      this();
-    }
+  public final void setSize(int n) {
+    this.size = n;
+  }
+
+  public Example(int size) {
+    this.size = size;
   }
 }
 
