@@ -124,6 +124,10 @@ class GenerateComparisonTask extends DefaultTask {
                 .collectEntries({ [(it.getName()), it.getText("UTF-8")] })
 
         String doc = """
+[<< back](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison)
+
+-----------------------------
+
 # ${pretty(exampleName)}
 """.stripMargin()
 
