@@ -14,14 +14,11 @@ buildscript {
     }
     dependencies {
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}")
-        classpath("org.clojars.razum2um:jd-core-java:1.2")
-        classpath 'gradle.plugin.com.github.sherter.google-java-format:google-java-format-gradle-plugin:0.7.1'
     }
 }
 
 
 apply plugin: 'kotlin'
-apply plugin: "com.github.sherter.google-java-format"
 
 group = 'se.bjurr.kotlinvsjava'
 version = '0.0.1-SNAPSHOT'
@@ -70,34 +67,6 @@ task ktlint(type: JavaExec, group: "verification") {
 }
 ktlint.dependsOn ktlintFormat
 check.dependsOn ktlint
-
-class DecompileTask extends DefaultTask {
-    File decompileJar
-    File decompiledPath
-
-    @TaskAction
-    def decompiling() {
-        decompiledPath.deleteDir()
-        println "From jar: " + decompileJar
-        new jd.core.Decompiler().decompile(decompileJar.getAbsolutePath(), decompiledPath.getAbsolutePath())
-    }
-}
-
-task decompile(type: DecompileTask) {
-    decompileJar = file(project.getBuildDir().getAbsolutePath() + "/libs/yet-another-kotlin-vs-java-comparison-0.0.1-SNAPSHOT.jar")
-    decompiledPath = file(project.getBuildDir().getAbsolutePath() + "/../src/main/java")
-}
-decompile.dependsOn build
-
-import com.github.sherter.googlejavaformatgradleplugin.GoogleJavaFormat
-
-task format(type: GoogleJavaFormat) {
-    source 'src/main/java'
-    include '**/*.java'
-    exclude '**/p5initiiifromiiiconstructor/*'
-    exclude '**/p7secondaryiiiconstructor/*'
-}
-format.dependsOn decompile
 
 class GenerateComparisonTask extends DefaultTask {
 
@@ -243,4 +212,3 @@ This one shows complete examples where the Kotlin code is compiled to bytecode a
 }
 
 task generateComparison(type: GenerateComparisonTask)
-generateComparison.dependsOn format
