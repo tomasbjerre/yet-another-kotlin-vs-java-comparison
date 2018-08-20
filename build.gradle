@@ -97,6 +97,11 @@ task format(type: GoogleJavaFormat) {
 }
 format.dependsOn decompile
 
+task verifyFormatting(type: VerifyGoogleJavaFormat) {
+    exclude '**/*.java'
+    ignoreFailures true
+}
+
 class GenerateComparisonTask extends DefaultTask {
 
     def getAllExampleDirs(String folder) {
