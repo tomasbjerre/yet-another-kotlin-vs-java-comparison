@@ -1,4 +1,4 @@
-package classesiiiandiiiobjects.dataiiiclasses.p04variiiandiiival;
+package classesiiiandiiiobjects.properties.p03variiiandiiival;
 
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;

@@ -1,4 +1,4 @@
-package classesiiiandiiiobjects.dataiiiclasses.p04variiiandiiival
+package classesiiiandiiiobjects.properties.p03variiiandiiival
 
 class UsingVarAndInit(var name: String = "")
 

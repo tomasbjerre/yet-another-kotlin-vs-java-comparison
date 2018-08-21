@@ -10,7 +10,7 @@
 **Example.kt**
 
 ```kotlin
-package classesiiiandiiiobjects.dataiiiclasses.p04variiiandiiival
+package classesiiiandiiiobjects.properties.p03variiiandiiival
 
 class UsingVarAndInit(var name: String = "")
 
@@ -27,7 +27,7 @@ class UsingValAndNoInit(val name: String)
 **UsingValAndNoInit.java**
 
 ```java
-package classesiiiandiiiobjects.dataiiiclasses.p04variiiandiiival;
+package classesiiiandiiiobjects.properties.p03variiiandiiival;
 
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
@@ -51,7 +51,7 @@ public final class UsingValAndNoInit {
 **UsingVarAndNoInit.java**
 
 ```java
-package classesiiiandiiiobjects.dataiiiclasses.p04variiiandiiival;
+package classesiiiandiiiobjects.properties.p03variiiandiiival;
 
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
@@ -80,7 +80,7 @@ public final class UsingVarAndNoInit {
 **UsingValAndInit.java**
 
 ```java
-package classesiiiandiiiobjects.dataiiiclasses.p04variiiandiiival;
+package classesiiiandiiiobjects.properties.p03variiiandiiival;
 
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
@@ -117,7 +117,7 @@ public final class UsingValAndInit {
 **UsingVarAndInit.java**
 
 ```java
-package classesiiiandiiiobjects.dataiiiclasses.p04variiiandiiival;
+package classesiiiandiiiobjects.properties.p03variiiandiiival;
 
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
