@@ -1,8 +1,9 @@
 package functionsiiiandiiilambdas.functions.p03infix
 
 infix fun Int.shl(x: Int): Double {
-    println(x)
-    val y = x * Math.random()
+    println("x:" + x)
+    println("this: " + this)
+    val y = (this + x) * Math.random()
     println(y)
     return y
 }
