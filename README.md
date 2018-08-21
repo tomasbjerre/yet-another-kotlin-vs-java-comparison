@@ -26,7 +26,7 @@ The examples are organized like the examples in the [Kotlin Reference](https://k
   * [Secondary Constructor](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/classesiiiandiiiinheritance/p07secondaryiiiconstructor.md)
   * [Default Values](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/classesiiiandiiiinheritance/p08defaultiiivalues.md)
   * [Instantiation](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/classesiiiandiiiinheritance/p09instantiation.md)
-  * [Open](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/classesiiiandiiiinheritance/p10open.md)
+  * [Open Closed Data Object](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/classesiiiandiiiinheritance/p10openiiiclosediiidataiiiobject.md)
   * [Inheritance](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/classesiiiandiiiinheritance/p11inheritance.md)
   * [Inheritance No Primary Constructor](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/classesiiiandiiiinheritance/p12inheritanceiiinoiiiprimaryiiiconstructor.md)
   * [Override Method](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/classesiiiandiiiinheritance/p13overrideiiimethod.md)
