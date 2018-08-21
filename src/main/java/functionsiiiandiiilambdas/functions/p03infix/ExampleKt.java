@@ -4,9 +4,11 @@ import java.io.PrintStream;
 import kotlin.Metadata;
 
 public final class ExampleKt {
-    public static final int shl(int $receiver, int x) {
+    public static final double shl(int $receiver, int x) {
         System.out.println(x);
-        return x;
+        double y = (double)x * Math.random();
+        System.out.println(y);
+        return y;
     }
 
     public static final void test() {

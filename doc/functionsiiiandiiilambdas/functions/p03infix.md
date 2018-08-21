@@ -12,9 +12,11 @@
 ```kotlin
 package functionsiiiandiiilambdas.functions.p03infix
 
-infix fun Int.shl(x: Int): Int {
+infix fun Int.shl(x: Int): Double {
     println(x)
-    return x
+    val y = x * Math.random()
+    println(y)
+    return y
 }
 
 fun test() {
@@ -36,9 +38,11 @@ import java.io.PrintStream;
 import kotlin.Metadata;
 
 public final class ExampleKt {
-    public static final int shl(int $receiver, int x) {
+    public static final double shl(int $receiver, int x) {
         System.out.println(x);
-        return x;
+        double y = (double)x * Math.random();
+        System.out.println(y);
+        return y;
     }
 
     public static final void test() {

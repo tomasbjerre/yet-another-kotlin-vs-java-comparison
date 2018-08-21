@@ -1,8 +1,10 @@
 package functionsiiiandiiilambdas.functions.p03infix
 
-infix fun Int.shl(x: Int): Int {
+infix fun Int.shl(x: Int): Double {
     println(x)
-    return x
+    val y = x * Math.random()
+    println(y)
+    return y
 }
 
 fun test() {
