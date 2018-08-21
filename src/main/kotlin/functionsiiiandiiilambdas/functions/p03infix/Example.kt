@@ -6,6 +6,8 @@ infix fun Int.shl(x: Int): Int {
 }
 
 fun test() {
-    1 shl 2
-    1.shl(2)
+    val res1 = 1 shl 2
+    println(res1)
+    val res2 = 1.shl(2)
+    println(res2)
 }

@@ -18,8 +18,10 @@ infix fun Int.shl(x: Int): Int {
 }
 
 fun test() {
-    1 shl 2
-    1.shl(2)
+    val res1 = 1 shl 2
+    println(res1)
+    val res2 = 1.shl(2)
+    println(res2)
 }
 ```
 
@@ -40,7 +42,10 @@ public final class ExampleKt {
     }
 
     public static final void test() {
-        1 << 2;
+        int res1 = 4;
+        System.out.println(res1);
+        int res2 = 1 << 2;
+        System.out.println(res2);
     }
 }
 

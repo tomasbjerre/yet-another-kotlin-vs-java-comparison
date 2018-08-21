@@ -10,6 +10,9 @@ public final class ExampleKt {
     }
 
     public static final void test() {
-        1 << 2;
+        int res1 = 4;
+        System.out.println(res1);
+        int res2 = 1 << 2;
+        System.out.println(res2);
     }
 }
