@@ -197,19 +197,22 @@ ${fileContent}
 This one shows complete examples where the Kotlin code is compiled to bytecode and decompiled to Java. Enabling a person familiar with Java to very quickly understand Kotlin.
 
 ## Examples
+
+The examples are organized like the examples in the [Kotlin Reference](https://kotlinlang.org/docs/reference/).
+
 """
 
         Map<String, Map<String, Map<String, String>>> examplesByCategory = getByCategory(examples)
 
         examplesByCategory.each { mainCategory, subCategories ->
             def mainTitle = pretty(mainCategory)
-            readmeMd += "* ${mainTitle} \n"
+            readmeMd += "## ${mainTitle} \n"
             subCategories.each { subCategory, filePaths ->
                 def subCategoryTitle = pretty(subCategory)
-                readmeMd += "  * ${subCategoryTitle} \n"
+                readmeMd += "* **${subCategoryTitle}**\n"
                 filePaths.each { fileName, filePath ->
                     def fileNameTitle = pretty(fileName)
-                    readmeMd += "    * [${fileNameTitle}](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master${filePath})\n"
+                    readmeMd += "  * [${fileNameTitle}](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master${filePath})\n"
                 }
             }
         }
