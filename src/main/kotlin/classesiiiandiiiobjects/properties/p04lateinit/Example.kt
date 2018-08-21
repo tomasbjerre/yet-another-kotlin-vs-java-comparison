@@ -11,3 +11,12 @@ class UsingLateinitWithInjectOnSet {
         @Inject
         set
 }
+
+class UsingLateinitSecondaryConstructor {
+    lateinit var name: String
+
+    @Inject
+    constructor(name: String) {
+        this.name = name
+    }
+}
