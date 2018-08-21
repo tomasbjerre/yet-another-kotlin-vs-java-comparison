@@ -1,4 +1,4 @@
-package classesiiiandiiiobjects.objects.p02companion
+package classesiiiandiiiobjects.objects.p02companioniiiandiiijvmstatic
 
 class Example {
     companion object {

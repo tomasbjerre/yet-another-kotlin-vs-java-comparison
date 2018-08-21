@@ -1,4 +1,32 @@
-package classesiiiandiiiobjects.objects.p02companion;
+
+[<< back](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison)
+
+-----------------------------
+
+# Companion And Jvmstatic
+
+## Kotlin
+
+**Example.kt**
+
+```kotlin
+package classesiiiandiiiobjects.objects.p02companioniiiandiiijvmstatic
+
+class Example {
+    companion object {
+        fun create(): String = "A string"
+        @JvmStatic
+        fun createWithJvmStatic(): String = "Another string"
+    }
+}
+```
+
+## Java
+
+**Example.java**
+
+```java
+package classesiiiandiiiobjects.objects.p02companioniiiandiiijvmstatic;
 
 import kotlin.jvm.JvmStatic;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -32,3 +60,5 @@ public final class Example {
     }
   }
 }
+
+```
