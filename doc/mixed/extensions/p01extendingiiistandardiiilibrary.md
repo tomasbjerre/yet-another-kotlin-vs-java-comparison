@@ -1,4 +1,33 @@
-package mixed.extensions.p01tailiiirecursive;
+
+[<< back](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison)
+
+-----------------------------
+
+# Extending Standard Library
+
+## Kotlin
+
+**Example.kt**
+
+```kotlin
+package mixed.extensions.p01extendingiiistandardiiilibrary
+
+fun String.concatenatedLength(str: String): Int {
+    return (this.length + str.length)
+}
+
+fun f() {
+    var len = "one string".concatenatedLength("another string")
+    println(len)
+}
+```
+
+## Java
+
+**ExampleKt.java**
+
+```java
+package mixed.extensions.p01extendingiiistandardiiilibrary;
 
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
@@ -15,3 +44,5 @@ public final class ExampleKt {
     System.out.println(len);
   }
 }
+
+```

@@ -63,4 +63,4 @@ The examples are organized like the examples in the [Kotlin Reference](https://k
   * [Infix](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/functionsiiiandiiilambdas/functions/p03infix.md)
 ## Mixed 
 * **Extensions**
-  * [Tail Recursive](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/mixed/extensions/p01tailiiirecursive.md)
+  * [Extending Standard Library](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/mixed/extensions/p01extendingiiistandardiiilibrary.md)
