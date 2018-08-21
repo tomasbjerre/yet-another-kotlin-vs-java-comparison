@@ -7,6 +7,13 @@ This one shows complete examples where the Kotlin code is compiled to bytecode a
 
 The examples are organized like the examples in the [Kotlin Reference](https://kotlinlang.org/docs/reference/).
 
+## Basics 
+* **Control Flow**
+  * [Assign From If](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/basics/controliiiflow/p01assigniiifromiiiif.md)
+  * [When](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/basics/controliiiflow/p02when.md)
+* **Returns Jumps**
+  * [Loop Labels](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/basics/returnsiiijumps/p01loopiiilabels.md)
+  * [Return To Label](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/basics/returnsiiijumps/p02returniiitoiiilabel.md)
 ## Classes And Objects 
 * **Classes And Inheritance**
   * [Empty Class](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/classesiiiandiiiinheritance/p01emptyiiiclass.md)
