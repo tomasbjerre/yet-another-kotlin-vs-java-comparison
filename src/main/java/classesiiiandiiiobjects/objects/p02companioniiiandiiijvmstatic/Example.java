@@ -7,6 +7,11 @@ import org.jetbrains.annotations.NotNull;
 public final class Example {
   public static final Companion Companion = new Companion(null);
 
+  @NotNull
+  public final String functionInClass() {
+    return "Another string";
+  }
+
   @JvmStatic
   @NotNull
   public static final String createWithJvmStatic() {
