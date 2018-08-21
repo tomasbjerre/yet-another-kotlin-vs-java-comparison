@@ -77,6 +77,7 @@ task format(type: GoogleJavaFormat) {
     include '**/*.java'
     exclude '**/p03destructing/ExampleKt.java'
     exclude '**/p03copyiiioutiiiparameter/ExampleKt.java'
+    exclude '**/p03infix/ExampleKt.java'
 }
 
 class GenerateComparisonTask extends DefaultTask {
