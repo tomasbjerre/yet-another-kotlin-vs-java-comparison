@@ -1,11 +1,9 @@
 package classesiiiandiiiobjects.objects.p02companion
 
-interface Factory<T> {
-    fun create(): T
-}
-
-class MyClass {
-    companion object : Factory<MyClass> {
-        override fun create(): MyClass = MyClass()
+class Example {
+    companion object {
+        fun create(): String = "A string"
+        @JvmStatic
+        fun createWithJvmStatic(): String = "Another string"
     }
 }

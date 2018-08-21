@@ -1,31 +1,3 @@
-
-[<< back](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison)
-
------------------------------
-
-# Companion
-
-## Kotlin
-
-**Example.kt**
-
-```kotlin
-package classesiiiandiiiobjects.objects.p02companion
-
-class Example {
-    companion object {
-        fun create(): String = "A string"
-        @JvmStatic
-        fun createWithJvmStatic(): String = "Another string"
-    }
-}
-```
-
-## Java
-
-**Example.java**
-
-```java
 package classesiiiandiiiobjects.objects.p02companion;
 
 import kotlin.jvm.JvmStatic;
@@ -60,5 +32,3 @@ public final class Example {
     }
   }
 }
-
-```
