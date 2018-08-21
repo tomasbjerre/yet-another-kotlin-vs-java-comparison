@@ -10,6 +10,7 @@ The examples are organized like the examples in the [Kotlin Reference](https://k
 ## Basics 
 * **Control Flow**
   * [Assign From If](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/basics/controliiiflow/p01assigniiifromiiiif.md)
+  * [Assign If Not Null](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/basics/controliiiflow/p02assigniiiifiiinotiiinull.md)
   * [When](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/basics/controliiiflow/p02when.md)
 * **Returns Jumps**
   * [Loop Labels](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/basics/returnsiiijumps/p01loopiiilabels.md)
