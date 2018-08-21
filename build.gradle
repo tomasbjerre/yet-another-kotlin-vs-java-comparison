@@ -30,13 +30,13 @@ sourceSets {
 }
 compileKotlin {
     kotlinOptions {
-        freeCompilerArgs = ["-Xjsr305=strict", "-java-parameters"]
+        freeCompilerArgs = ["-Xjsr305=strict", "-java-parameters", "-Xno-optimize"]
         jvmTarget = "1.8"
     }
 }
 compileTestKotlin {
     kotlinOptions {
-        freeCompilerArgs = ["-Xjsr305=strict", "-java-parameters"]
+        freeCompilerArgs = ["-Xjsr305=strict", "-java-parameters", "-Xno-optimize"]
         jvmTarget = "1.8"
     }
 }

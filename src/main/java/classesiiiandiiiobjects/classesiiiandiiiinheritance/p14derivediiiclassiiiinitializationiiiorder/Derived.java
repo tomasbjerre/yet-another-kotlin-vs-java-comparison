@@ -19,24 +19,24 @@ public final class Derived extends Base {
   }
 
   public Derived(@NotNull String name, @NotNull String lastName) {
-    int n;
     Intrinsics.checkParameterIsNotNull((Object) name, (String) "name");
     Intrinsics.checkParameterIsNotNull((Object) lastName, (String) "lastName");
-    String string = StringsKt.capitalize((String) name);
+    Object object = StringsKt.capitalize((String) name);
     Derived derived = this;
-    String it = string;
-    String string2 = "Argument for Base: " + it;
-    System.out.println((Object) string2);
-    String string3 = string;
-    super(string3);
-    this.lastName = lastName;
-    string = "Initializing Derived";
+    String it = object;
+    String string = "Argument for Base: " + it;
     System.out.println((Object) string);
-    int n2 = super.getSize() + this.lastName.length();
+    Object object2 = object;
+    super((String) object2);
+    this.lastName = lastName;
+    object = "Initializing Derived";
+    System.out.println(object);
+    object = super.getSize() + this.lastName.length();
     derived = this;
-    int it2 = n2;
-    string2 = "Initializing size in Derived: " + it2;
-    System.out.println((Object) string2);
-    derived.size = n = n2;
+    int it2 = ((Number) object).intValue();
+    string = "Initializing size in Derived: " + it2;
+    System.out.println((Object) string);
+    object2 = object;
+    derived.size = ((Number) object2).intValue();
   }
 }
