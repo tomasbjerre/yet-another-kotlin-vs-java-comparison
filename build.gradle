@@ -172,7 +172,7 @@ ${fileContent}
     }
 
     def pretty(String from) {
-        from.split("/").reverse()[0].replaceAll(/^(p[0-9]*)/, "").replaceAll("iii", " ").split(" ").collect({
+        from.split("/").reverse()[0].replaceAll(/^(p[0-9]+)/, "").replaceAll("iii", " ").split(" ").collect({
             it.capitalize().trim()
         }).join(" ").trim()
     }

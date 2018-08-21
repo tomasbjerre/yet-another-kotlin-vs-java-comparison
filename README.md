@@ -42,7 +42,7 @@ The examples are organized like the examples in the [Kotlin Reference](https://k
 * **Objects**
   * [Just An Object](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/objects/p01justiiianiiiobject.md)
   * [Companion And Jvmstatic](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/objects/p02companioniiiandiiijvmstatic.md)
-* **Roperties**
+* **Properties**
   * [Get And Set](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/properties/p01getiiiandiiiset.md)
   * [Setter With Annotation](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/properties/p02setteriiiwithiiiannotation.md)
 * **Sealed Classes**
