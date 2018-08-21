@@ -45,3 +45,7 @@ This one shows complete examples where the Kotlin code is compiled to bytecode a
   * Sealed Classes 
     * [Sealed Class](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/sealediiiclasses/p01sealediiiclass.md)
     * [Not Sealed](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/sealediiiclasses/p02notiiisealed.md)
+* Functions And Lambdas 
+  * Functions 
+    * [Tail Recursive](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/functionsiiiandiiilambdas/functions/p01tailiiirecursive.md)
+    * [Single Expression](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/functionsiiiandiiilambdas/functions/p02singleiiiexpression.md)
