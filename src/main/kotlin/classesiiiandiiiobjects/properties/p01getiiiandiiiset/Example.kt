@@ -12,3 +12,22 @@ class Example(var size: Int) {
             }
         }
 }
+
+class ExampleFun(var size: Int) {
+
+    val isEmptyVal: Boolean
+        get() = this.size == 0
+
+    fun isEmptyFun(): Boolean = this.size == 0
+}
+
+class ExampleAccessField(var size: Int) {
+    var counter = 0
+        set(value) {
+            if (value >= 0) field = value
+        }
+    var counterWithoutField = 0
+        set(value) {
+            if (value >= 0) counter = value
+        }
+}
