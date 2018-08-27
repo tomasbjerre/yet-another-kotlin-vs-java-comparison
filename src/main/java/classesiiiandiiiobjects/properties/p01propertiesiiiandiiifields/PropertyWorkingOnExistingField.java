@@ -1,6 +1,6 @@
-package classesiiiandiiiobjects.properties.p01getiiiandiiiset;
+package classesiiiandiiiobjects.properties.p01propertiesiiiandiiifields;
 
-public final class Example {
+public final class PropertyWorkingOnExistingField {
   private int size;
 
   public final boolean isEmpty() {
@@ -21,7 +21,7 @@ public final class Example {
     this.size = n;
   }
 
-  public Example(int size) {
+  public PropertyWorkingOnExistingField(int size) {
     this.size = size;
   }
 }

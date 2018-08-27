@@ -50,7 +50,7 @@ The examples are organized like the examples in the [Kotlin Reference](https://k
   * [Object](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/objects/p01object.md)
   * [Companion And Jvmstatic](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/objects/p02companioniiiandiiijvmstatic.md)
 * **Properties**
-  * [Get And Set](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/properties/p01getiiiandiiiset.md)
+  * [Properties And Fields](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/properties/p01propertiesiiiandiiifields.md)
   * [Setter With Annotation](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/properties/p02setteriiiwithiiiannotation.md)
   * [Var And Val](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/properties/p03variiiandiiival.md)
   * [Lateinit](https://github.com/tomasbjerre/yet-another-kotlin-vs-java-comparison/blob/master/doc/classesiiiandiiiobjects/properties/p04lateinit.md)

@@ -1,6 +1,6 @@
-package classesiiiandiiiobjects.properties.p01getiiiandiiiset;
+package classesiiiandiiiobjects.properties.p01propertiesiiiandiiifields;
 
-public final class ExampleFun {
+public final class FunAndProperty {
   private int size;
 
   public final boolean isEmptyVal() {
@@ -19,7 +19,7 @@ public final class ExampleFun {
     this.size = n;
   }
 
-  public ExampleFun(int size) {
+  public FunAndProperty(int size) {
     this.size = size;
   }
 }

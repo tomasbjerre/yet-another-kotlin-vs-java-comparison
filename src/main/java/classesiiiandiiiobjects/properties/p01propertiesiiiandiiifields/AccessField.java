@@ -1,9 +1,8 @@
-package classesiiiandiiiobjects.properties.p01getiiiandiiiset;
+package classesiiiandiiiobjects.properties.p01propertiesiiiandiiifields;
 
-public final class ExampleAccessField {
+public final class AccessField {
   private int counter;
   private int counterWithoutField;
-  private int size;
 
   public final int getCounter() {
     return this.counter;
@@ -23,17 +22,5 @@ public final class ExampleAccessField {
     if (value >= 0) {
       this.setCounter(value);
     }
-  }
-
-  public final int getSize() {
-    return this.size;
-  }
-
-  public final void setSize(int n) {
-    this.size = n;
-  }
-
-  public ExampleAccessField(int size) {
-    this.size = size;
   }
 }
