@@ -111,6 +111,7 @@ package classesiiiandiiiobjects.classesiiiandiiiinheritance.p10openiiiclosediiid
 
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 public final class ADataClass {
   @NotNull private final String str;
@@ -145,6 +146,7 @@ public final class ADataClass {
     return aDataClass.copy(string);
   }
 
+  @NotNull
   public String toString() {
     return "ADataClass(str=" + this.str + ")";
   }
@@ -154,7 +156,7 @@ public final class ADataClass {
     return string != null ? string.hashCode() : 0;
   }
 
-  public boolean equals(Object object) {
+  public boolean equals(@Nullable Object object) {
     block3:
     {
       block2:

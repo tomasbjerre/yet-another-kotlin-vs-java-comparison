@@ -33,6 +33,7 @@ fun eval(expr: Expr): Double = when (expr) {
 package classesiiiandiiiobjects.sealediiiclasses.p02notiiisealed;
 
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 public final class Const extends Expr {
   private final double number;
@@ -63,6 +64,7 @@ public final class Const extends Expr {
     return const_.copy(d);
   }
 
+  @NotNull
   public String toString() {
     return "Const(number=" + this.number + ")";
   }
@@ -71,7 +73,7 @@ public final class Const extends Expr {
     return Double.hashCode(this.number);
   }
 
-  public boolean equals(Object object) {
+  public boolean equals(@Nullable Object object) {
     block3:
     {
       block2:
@@ -130,6 +132,7 @@ package classesiiiandiiiobjects.sealediiiclasses.p02notiiisealed;
 
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 public final class Sum extends Expr {
   @NotNull private final Expr e1;
@@ -181,6 +184,7 @@ public final class Sum extends Expr {
     return sum.copy(expr, expr2);
   }
 
+  @NotNull
   public String toString() {
     return "Sum(e1=" + this.e1 + ", e2=" + this.e2 + ")";
   }
@@ -191,7 +195,7 @@ public final class Sum extends Expr {
     return (expr != null ? expr.hashCode() : 0) * 31 + (expr2 != null ? expr2.hashCode() : 0);
   }
 
-  public boolean equals(Object object) {
+  public boolean equals(@Nullable Object object) {
     block3:
     {
       block2:

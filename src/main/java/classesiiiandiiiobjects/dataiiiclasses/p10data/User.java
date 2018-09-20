@@ -2,6 +2,7 @@ package classesiiiandiiiobjects.dataiiiclasses.p10data;
 
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 public final class User {
   @NotNull private final String name;
@@ -49,6 +50,7 @@ public final class User {
     return user.copy(string, n);
   }
 
+  @NotNull
   public String toString() {
     return "User(name=" + this.name + ", age=" + this.age + ")";
   }
@@ -58,7 +60,7 @@ public final class User {
     return (string != null ? string.hashCode() : 0) * 31 + Integer.hashCode(this.age);
   }
 
-  public boolean equals(Object object) {
+  public boolean equals(@Nullable Object object) {
     block3:
     {
       block2:

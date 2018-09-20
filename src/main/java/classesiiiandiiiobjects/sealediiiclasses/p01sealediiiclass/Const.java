@@ -1,6 +1,7 @@
 package classesiiiandiiiobjects.sealediiiclasses.p01sealediiiclass;
 
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 public final class Const extends Expr {
   private final double number;
@@ -32,6 +33,7 @@ public final class Const extends Expr {
     return const_.copy(d);
   }
 
+  @NotNull
   public String toString() {
     return "Const(number=" + this.number + ")";
   }
@@ -40,7 +42,7 @@ public final class Const extends Expr {
     return Double.hashCode(this.number);
   }
 
-  public boolean equals(Object object) {
+  public boolean equals(@Nullable Object object) {
     block3:
     {
       block2:
